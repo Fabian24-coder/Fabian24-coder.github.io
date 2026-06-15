@@ -1,0 +1,441 @@
+/*General styling*/
+:root {
+    --primary-color: #4a5d4e;
+    --accent-color: #c28d68;
+    --text-dark: #2c2520;
+    --text-light: #fdfbf7;
+    --bg-light: #f7f4eb;
+    --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: #f7f4eb;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.logo img {
+    height: 60px;              
+    width: auto;               
+    display: block;            
+    border-radius: 8px;        
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.logo img:hover {
+    transform: scale(1.05);    /* Slight zoom */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.name a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a:hover{
+    color: var(--text-light);
+
+}
+
+.nav-links a {
+    color: #b3c2b7;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+
+/*Home Page*/
+.home-intro{
+    background: url(gallery/rufy.jpg) center / cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 1rem;
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.intro-content2 {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #222; 
+    color: #fff;    
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    position: static;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/*Rooms*/
+
+.room-intro{ 
+    background: url(gallery/intro.jpg) center / cover no-repeat;
+    color: var(--text-light);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 1rem;
+
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.room-display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.room-card {
+    background: white;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+    padding: 10px;
+}
+
+.room-img {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.price{
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #af7751;
+}
+
+/*booking*/
+#booking{
+    background: url('MLogo.png') center / cover no-repeat;
+    
+}
+ .booking-container {
+    background-color: rgba(253, 251, 247, 0.96); /* Warm lighter background with slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 750px;
+    padding: 2.5rem;
+    color: #2c2520;
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 1.5rem;    /* Reduced from 2.5rem */
+    padding-bottom: 1.5rem
+}
+
+.btn1{
+    display: inline-block;
+    align-items: center;
+    background-color: #000f80;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.btn1:hover{
+    background-color: green;
+}
+
+.booking-container h2 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.booking-form a{
+    align-items: center;
+}
+
+.room-btn{
+    padding-left: 30.25%;
+}
+
+.booking-intro{ 
+    background: url(gallery/booking\ bg.jpg) center / cover no-repeat;
+    color: var(--text-light);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 1rem;
+}
+
+/* Modernize the radio buttons */
+.dropdown{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dropdown:focus{
+    border-color: #007bff;
+    outline: none;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4a5d4e;
+    box-shadow: 0 0 0 3px rgba(74, 93, 78, 0.1);
+}
+
+
+/*AboutUs*/
+.About-intro{
+    background: url(gallery/6.jpg) center / cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 1rem;
+}
+
+
+#about-card {
+    background: white;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Contact Section*/
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin: 20px;
+    padding: 15px;
+}
+
+.contact-intro{ 
+    background: url(gallery/11.jpg) center / cover no-repeat;
+    color: var(--text-light);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 1rem;
+
+}
+
+.social-icons img{
+    width: 40px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(3, 67, 105);
+}
+
+.icon-design img{
+    margin-right: 20px;
+}
+
+.icon-design :hover{
+    color: rgb(15, 0, 0);
+    transform: scale(1.05);
+    
+}
+
+/*Gallery*/
+.gallery-intro{
+    background: url(gallery/galleryBg.jpg) center / cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 1rem;
+}
+.gallery-card{
+    background: white;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+    padding: 10px;
+    height: 260px;
+}
+
+.gallery-card p{
+    text-align: center;
+}
+
+.gallery-img {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-img img {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+.gallery-img:hover img{
+    transform: scale(1);
+}
+

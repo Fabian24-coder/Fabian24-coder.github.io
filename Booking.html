@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room |GlobalSuites Motel</title>
+    <link rel="stylesheet" href="example.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="name">
+            <div class="logo">
+                <img src="MLogo.png">
+            </div>
+            <a href="index.html"> GlobalSuites Motel</a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-home">Home</a></li>
+            <li><a href="rooms.html" class="nav-rooms">Rooms</a></li>
+            <li><a href="AboutUs.html" class="nav-rooms">About Us</a></li>
+            <li><a href="Gallery.html" class="nav-rooms">Gallery</a></li>
+            <li><a href="contact.html" class="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main id="booking">
+        <div class="booking-intro">
+            <div class="intro-content">
+                <h1>Reservation</h1>
+                <p>Make a seamless reservation just your device for a perfect Stay at the Home Away from Home.</p>
+            </div>
+
+        </div>
+        
+            <div class="booking-container">
+                <h2 style="margin-bottom: 1.5rem; color: #4a5d4e; border-bottom: 2px solid #e5e0d8; padding-bottom: 0.5rem;">Room Reservation</h2>
+                
+                <form action="" class="booking-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="arrival">Name</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone<span class="required"></span></label>
+                            <input type="tel" placeholder="0712345678" required>
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label>Email Address<span class="required">*</span></label>
+                            <input type="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Physical Address</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Number of Guests</label>
+                            <input type="number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Arrival Date</label>
+                            <input type="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label  for="departure">Departure Date</label>
+                            <input type="date" id="departure" name="departure_date" required>
+                        </div>
+                    </div>
+
+                    <div class="radio-group">
+                        <div class="form-group ">
+                        <label>Room Preference:<span class="required"></span></label>
+                        
+                    </div>
+                       <select class="dropdown">
+                        <option value="Presidential Suite">Presidential Suite</option>
+                        <option value="Executive Suite">Executive Suite</option>
+                        <option value="The Queen Suite">The Queen Suite</option>
+                        <option value="Premium Suite">Premium Suite</option>
+                        <option value="The Deluxe Suite">The Deluxe Suite</option>
+                        <option value="The Twin Creek Double Suite">The Twin Creek Double Suite</option>
+                       </select>
+
+                        <br>
+                    </div>
+            <div class="room-btn">
+                <a href="Rooms.html" class="btn1">Not Sure of the Room!</a>
+            </div>                
+                <button type="submit" class="btn">SUBMIT</button>
+            </div>
+            
+            </form>
+            </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 GlobalSuites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
