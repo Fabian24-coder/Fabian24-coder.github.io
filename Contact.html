@@ -40,30 +40,25 @@
         <div class="booking-container">
                 <h2 style="margin-bottom: 1.5rem; color: #4a5d4e; border-bottom: 2px solid #e5e0d8; padding-bottom: 0.5rem;">Your Inquiry</h2>
                 
-                <form action="" class="booking-form">
+                <form action="https://formspree.io/f/xeewbjww" method="POST" class="booking-form"> 
+  <div class="form-row"> 
+    <div class="form-group"> 
+      <label for="name">Name</label> 
+      <input type="text" id="name" name="name" required=""> 
+    </div> 
+    <div class="form-group"> 
+      <label for="email">Email</label> 
+      <input type="email" id="email" name="email" required=""> 
+    </div> 
+    <div class="form-group col-6"> 
+      <label for="message">Any Message or Inquiry</label> 
+      <input type="text" id="subject" name="subject" placeholder="Subject" required=""> 
+      <textarea id="message" name="message" rows="4" required=""></textarea> 
+    </div> 
+  </div> 
+  <button type="submit" class="btn">SUBMIT</button> 
+</form>
 
-                    <div class="form-row">
-
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" required="">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Phone<span class="required"></span></label>
-                            <input type="tel" required="">
-                        </div>
-
-                        <div class="form-group col-6">
-                            <label>Any Message or Inquiry<span class="required"></span></label>
-                            <textarea rows="4" required=""></textarea>
-                        </div>
-
-
-                    </div>
-                            
-                <button type="submit" class="btn">SUBMIT</button>
-            </form>
         </div>
             <hr>
 
