@@ -407,6 +407,12 @@ input:focus {
     padding: 0 1rem;
 }
 
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 20px;
+}
 
 #about-card {
     background: white;
@@ -421,6 +427,12 @@ input:focus {
 .about-card h3{
     font-family: 'Tangerine', serif;
     font-size: 2rem;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 /*Contact Section*/
 .contact-section {
